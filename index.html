@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorting visualizer</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <header>
+        <h2 id="heading" class="text-center mb-5">SORTING VISUALIZER</h2>
+        <nav>
+            <div class="row">
+                    <div class="col gap-2 d-sm-flex"id="newarray">
+                        <button type="button" class="btn btn-outline-success ms-4 newarray">NEW ARRAY</button>
+                        <span class="mt-1 ms-5" id="size">Size
+                            <input id="sizeinp" class="slide"type="range" min="5" max="100" step=1 value=60>
+                        </span>
+                        <span class="mt-1" id="speed">Speed
+                            <input id="speedinp" class="slide" type="range" min="20" max="300" stepDown=10 value=60>
+                        </span>
+                    </div>
+                <div class="col gap-2 d-sm-flex justify-content-end">
+                        <button type="button" class="btn btn-outline-danger fw-bold bubble">BUBBLE SORT</button>
+                        <button type="button" class="btn btn-outline-danger fw-bold selection">SELECTION SORT</button>
+                        <button type="button" class="btn btn-outline-danger fw-bold insertion ">INSERTION SORT</button>
+                        <button type="button" class="btn btn-outline-danger fw-bold quick">QUICK SORT</button>
+                        <button type="button" class="btn btn-outline-danger me-3 fw-bold merge">MERGE SORT</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+</head>
+<body class="p-3 mb-2 bg-dark text-white">
+    
+        <div id="bars" class="flex-container"></div>
+        <script src="script.js/sorting.js"></script>
+        <script src="script.js/bubblesort.js"></script>
+        <script src="script.js/insertion.js"></script>
+        <script src="script.js/selection.js"></script>
+        <script src="script.js/mergesort.js"></script>
+        <script src="script.js/quick.js"></script>
+</body>        
+</html>
